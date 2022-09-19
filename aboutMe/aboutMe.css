@@ -1,0 +1,354 @@
+.message_top,.message_Myself {
+    border-bottom: 1px solid #ccc;
+}
+
+.message_tag,.message_Myself,.message_share {
+    margin-top: 15px;
+}
+
+.aboutMe_message {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.message_tag ul,.message_share ul {
+    width: 94%;
+    list-style: none;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.aboutMe_img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.aboutMe_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.message_top {
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.userName {
+    margin-left: 15px;
+}
+
+.message_Myself p {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.message_tag {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.message_tag span {
+    border: 1px solid #00B5AD;
+    display: inline-block;
+    padding: 2px 14px;
+    font-weight: bold;
+    color: #00B5AD;
+    border-radius: 5px;
+    position: relative;
+    background-color: #fff;
+    margin-left: 15px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.message_tag span i {
+    width: 9px;
+    height: 9px;
+    border-left: 1px solid #00B5AD;
+    border-bottom: 1px solid #00B5AD;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+.tag2 span {
+    color: #f5881c;
+    border: 1px solid #f5881c;
+}
+
+.tag2 span i {
+    border-left: 1px solid #f5881c;
+    border-bottom: 1px solid #f5881c;
+}
+
+.message_share ul span {
+    font-size: 22px;
+    margin-left: 25px;
+}
+
+.weChat {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: -3px;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 1;
+}
+
+.weChat i {
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: -6px;
+    left: 87px;
+    transform: rotate(135deg);
+    background-color: #fff;
+}
+
+.message_share ul span img {
+    width: 100%;
+    height: 100%;
+}
+
+.two i:hover {
+    color: pink;
+}
+
+.two i:hover+.weChat {
+    display: block;
+}
+
+.one i:hover {
+    color: pink;
+}
+
+.one i:hover+.share {
+    display: block;
+}
+
+.share {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: -57px;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 1;
+}
+
+.share i {
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: -6px;
+    left: 87px;
+    transform: rotate(135deg);
+    background-color: #fff;
+}
+
+.three i:hover {
+    color: pink;
+}
+
+.three i:hover+.admire {
+    display: block;
+}
+
+.admire {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 1;
+}
+
+.admire i {
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: -6px;
+    left: 87px;
+    transform: rotate(135deg);
+    background-color: #fff;
+}
+
+.admire,.share,.weChat {
+    margin-top: 5px;
+}
+
+
+.userNav {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.information {
+    width: 100%;
+    height: auto;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.userNavUl {
+    padding: 0;
+    height: auto;
+}
+
+.userNavUl>li{
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.userNavUl>li:last-child {
+    border-bottom: 0;
+}
+
+.userNavUlActive {
+    width: 100%;
+    height: auto;
+    border: 1px solid #00B5AD !important;
+    border-radius: 10px;
+}
+
+.newBlog li {
+    list-style: 0;
+}
+
+#userMessage {
+    display: none;
+}
+
+.userNav {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.information {
+    width: 100%;
+    height: auto;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.userNavUl {
+    padding: 0;
+    height: auto;
+}
+
+.userNavUl>li{
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.userNavUl>li:last-child {
+    border-bottom: 0;
+}
+
+.userNavUlActive {
+    width: 100%;
+    height: auto;
+    border: 1px solid #00B5AD !important;
+    border-radius: 10px;
+}
+
+.newBlog li {
+    list-style: 0;
+}
+
+#userMessage {
+    display: none;
+}
+
+.photoWall {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.photoUl {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.photoLi {
+    list-style: none;
+    width: 21%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.photoLi img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.isNot {
+    display: none;
+}
+
+.isOn {
+    display: block;
+}
+
+.newBlog>li {
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden; /*超出长度的文字隐藏*/
+    text-overflow:ellipsis;/*文字隐藏以后添加省略号*/
+    white-space: nowrap; /*强制不换行*/
+}
+
+.newBlog>li:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.newBlog>li:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.newBlog>li:last-child {
+    border-bottom: 0;
+    margin-bottom: 0px;
+}

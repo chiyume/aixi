@@ -43,7 +43,7 @@
             </div>
             <div class="col-md-2 col-xs-12">
                 <div class="search">
-                    <input type="text" name="" id="onSearch" placeholder="搜索">
+                    <input type="text" name="" id="onSearch" placeholder="搜索" onkeypress="key()">
                     <i class="glyphicon glyphicon-search" onclick="searchByData()"></i>
                 </div>
             </div>
@@ -204,7 +204,6 @@
 </body>
 <script>
     var selectedLi = function (self) {
-        console.log("HHHHHHHHHH")
         var loc = $(".active");
         loc.removeClass(".active");
         console.log(self)

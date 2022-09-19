@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "春日甜茶手记";
+}
+
+nav {
+    padding: 10px;
+    background-color: #1b1c1d;
+    border-bottom: 1px solid #d4d4d5;
+}
+nav .logoBox{
+    margin: 0;
+    padding: 0 !important;
+}
+nav .logo{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight:bold;
+    color: #00b5ad;
+    line-height: 38px;
+}
+nav .navMenu{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav .navMenu>li{
+    list-style: none;
+    width: 132px;
+    text-align: center;
+    line-height: 38px;
+    
+    border-radius: 2px;
+}
+nav .navMenu>li a{
+    color: #d4d4d5;
+    font-size: 16px;
+    text-decoration: none;
+}
+nav .navMenu>li i{
+    margin: 0px 4px;
+}
+nav .navMenu>.active{
+    background-color: #ffffff2c;   
+}
+nav .navMenu>.active>a{
+    color: white;
+}
+nav .navMenu>li:hover{
+    background-color: #ffffff2c;
+    color: white;
+}
+nav .navMenu>li:hover>a{
+    color: white;
+}
+nav .search{
+    display: flex;
+    margin-top: 12px;
+    font-size: 16px;
+}
+nav .search>input{
+    padding-left: 16px;
+    line-height: 30px;
+    border-radius: 20px;
+    width: 200px;
+}
+nav .search>i{
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: -30px;
+}
