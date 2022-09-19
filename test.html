@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/types.css">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/lable.css">
+    <script src="./jquery-1.11.1/jquery.js"></script>
+    <script src="./bootstrap-3.4.1/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./bootstrap-3.4.1/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/archives.css">
+    <link rel="stylesheet" href="./aboutMe/aboutMe.css">
+    <link rel="stylesheet" href="./css/datails.css">
+
+</head>
+
+<body>
+    <nav id="navHead">
+        <div class="container">
+
+            <div class="col-md-2 col-xs-12 logoBox">
+                <p class="logo">IT艾希博客</p>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <ul class="navMenu">
+                    <li class="active" onclick=""><a href="./index.html"><i
+                                class="glyphicon glyphicon-home"></i>博客首页</a></li>
+                    <li onclick="selectedLi(this)"><a style="cursor: pointer;" href="./test.html"><i
+                                class="glyphicon glyphicon-list"></i>博客分类</a></li>
+                    <li onclick="toLablePage()"><a style="cursor: pointer;"><i
+                                class="glyphicon glyphicon-tags"></i>博客标签</a></li>
+                    <li onclick="archives()"><a style="cursor: pointer;"><i
+                                class="glyphicon glyphicon-folder-open"></i>博客归档</a></li>
+                    <li onclick="onAboutMe()"><a style="cursor: pointer;"><i
+                                class="glyphicon glyphicon-user"></i>关于作者</a></li>
+                    <li style="visibility: hidden;height: 0px;"><a href=""><i
+                                class="glyphicon glyphicon-user"></i>flex占位</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-12">
+                <div class="search">
+                    <input type="text" name="" id="onSearch" placeholder="搜索">
+                    <i class="glyphicon glyphicon-search" onclick="searchByData()"></i>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="content" id="content2">
+
+        <div class="container">
+            <div class="col-md-9" id="articleLocation">
+                <div class="ctHead">
+                    <div class="headLeft">
+                        <i class="glyphicon glyphicon-list"></i>博客列表
+                    </div>
+                    <div class="headRight">
+                        共<span id="articleNumber"> 5 </span>篇
+                    </div>
+                </div>
+                <!-- 文章开始 -->
+                <!-- articleToPage.js -->
+                <!-- 文章结束 -->
+            </div>
+            <div class="col-md-3 aside">
+                <div class="asideBox">
+                    <div class="asideboxHead">
+                        <div class="headLeft">
+                            <i class="glyphicon glyphicon-list"></i>博客分类
+                        </div>
+                        <div class="headRight">
+                            <a href="">更多>></a>
+                        </div>
+                    </div>
+
+                    <div class="asideContent">
+                        <!-- 侧边栏1 分类列表-->
+                        <div class="contentBody">
+                            <!-- 分类1 -->
+                            <a class="classify">
+                                <p>教程</p>
+                                <div class="item_sign">
+                                    <i></i><span>53</span>
+                                </div>
+                            </a>
+                            <!-- 分类2 -->
+                            <a class="classify">
+                                <p>学习笔记</p>
+                                <div class="item_sign">
+                                    <i></i><span>3</span>
+                                </div>
+                            </a>
+                            <!--  -->
+                            <a class="classify">
+                                <p>古诗词</p>
+                                <div class="item_sign">
+                                    <i></i><span>123</span>
+                                </div>
+                            </a>
+                            <!--  -->
+                            <a class="classify">
+                                <p>音乐</p>
+                                <div class="item_sign">
+                                    <i></i><span>333</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- aside盒子2 -->
+                <div class="asideBox">
+                    <div class="asideboxHead">
+                        <div class="headLeft">
+                            <i class="glyphicon glyphicon-tags"></i>博客标签
+                        </div>
+                        <div class="headRight">
+                            <a onclick="toLablePage()" style="cursor: pointer;">更多>></a>
+                        </div>
+                    </div>
+                    <div class="menu_sign">
+                        <li><i></i><span>HTML</span></li>
+                        <li><i></i><span>JS</span></li>
+                        <li><i></i><span>JavaScript</span></li>
+                        <li><i></i><span>唐诗三百首</span></li>
+                        <li><i></i><span>Engine</span></li>
+                        <li><i></i><span>C#</span></li>
+                        <li><i></i><span>C++</span></li>
+
+                    </div>
+                </div>
+                <!-- aside3 -->
+                <div class="asideBox">
+                    <div class="asideboxHead">
+                        <div class="headLeft">
+                            <i class="glyphicon glyphicon-bookmark"></i>博客推荐
+                        </div>
+                        <div class="headRight">
+                            <a href="">更多>></a>
+                        </div>
+                    </div>
+                    <div class="asideContent">
+                        <li><span>LeetCode-001 两数之和</span></li>
+                        <li><span>关于MySQL面试100个常见问题</span></li>
+                        <li><span>Linux系统使用Yum命令安装Java</span></li>
+                        <li><span>SpringBoot项目部署云服务器详细</span></li>
+                        <li><span>Git以及Github使用指南</span></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="pageView">
+            <p>本站访问量:<span id="viewNumber">10032</span></p>
+            <p>已持续运行时间:<span id="runTime">10032</span>天</p>
+        </div>
+        <div class="container">
+            <div class="col-md-3">
+                <img src="./img/mikoto (35).jpg" alt="哎呀，图片走丢了" class="wechat" title="wechat">
+            </div>
+            <div class="col-md-3">
+                <p class="ftitle">最新博客</p>
+                <p class="fsign">XX有上热搜了！</p>
+                <p class="fsign">今天疫情已经结束了</p>
+                <p class="fsign">台风在XX地方登录了！！撒啊多所多啊打算按时</p>
+            </div>
+            <div class="col-md-3">
+                <p class="ftitle">联系作者</p>
+                <p class="fsign">邮箱:1231231@qq.com</p>
+                <p class="fsign">QQ:123123120</p>
+                <p class="fsign">All is in the darkness in the past!</p>
+                <p class="fsign"><a href="https://github.com/chiyume">GitHub:chiyume</a></p>
+            </div>
+            <div class="col-md-3">
+                <p class="ftitle">Blog</p>
+                <p class="fsign">All is in the</p>
+                <p class="fsign">darkness in the past.</p>
+                <p class="fsign">Please don't throw with me.</p>
+                <p class="fsign">Help me.</p>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="footer">
+            <p class="fsign">
+                Copyright© 2020-2022 IT chiyume All Rights Reserved
+            </p>
+            <p class="fsign">
+                通讯地址: 北京市学院路xxx号
+            </p>
+            <p class="fsign">
+                京ICP备202XXXXX号
+            </p>
+        </div>
+    </footer>
+    <div class="returnNavHead">
+        <a href="#navHead" title="回到顶部">
+            <i class="glyphicon glyphicon-arrow-up"></i>
+        </a>
+    </div>
+</body>
+<script>
+    var selectedLi = function (self) {
+        var loc = $(".active");
+        loc.removeClass("active");
+        var myself = $(self);
+        myself.addClass("active");
+        setTimeout(function () {
+            console.log("setTimeout")
+            var loc = $(".active");
+            loc.removeClass("active");
+            var myself = $(self);
+            myself.addClass("active");
+        }, 500)
+    }
+</script>
+<!-- 选择菜单.active样式改变 -->
+<script src="./js/selectedMenu.js"></script>
+<!-- lables标签数据 -->
+<script src="./js/lablesData.js"></script>
+<!-- 文章数据 -->
+<script src="./js/articleDate.js"></script>
+<!-- 文章注入页面 -->
+<script src="./js/articleToPage.js"></script>
+<!-- 文章详情 -->
+<script src="./js/details.js"></script>
+<!-- lable页面 -->
+<script src="./js/lable.js"></script>
+<!-- 搜索 -->
+<script src="./js/search.js"></script>
+
+<!-- achives -->
+<script src="./js/archives.js"></script>
+<!-- aboutMe -->
+<script src="./aboutMe/aboutMe.js"></script>
+<!--  -->
+<script src="./js/details2.js"></script>
+<script src="./js/types.js"></script>
+<script src="./js/select.js"></script>
+
+</html>
